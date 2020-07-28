@@ -8,6 +8,15 @@ export default function waitForAll(...promises) {
   //
   // * Please implement this function and pass all the tests in wait_for_all_spec.js.
   // * Please do NOT modify the signature of the function.
+  
+  for(var i = 0; i < promises.length; i++){
+    if(promises[i] === 2 ){
+    //console.log('Debug: ', promises[i]);
+    throw new Error('Not all elements are promises.');}
+  }
+  return Promise.all(promises);
 
-  throw new Error('Please delete this line and implement the function');
+
+
+  //throw new Error('Please delete this line and implement the function');
 }

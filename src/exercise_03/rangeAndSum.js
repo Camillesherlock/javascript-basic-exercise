@@ -6,8 +6,23 @@ export function range(start, end) {
   //
   // * Please implement this function and pass all the tests in range_and_array_spec.js.
   // * Please do NOT modify the signature of the function.
+  var result=[];
+ if(start === end){
+   return result;
+}
+if( start <end){
+for(var i=start;i<end;i++){
+   result.push(i);
+}
+ return result;
+}
+if(start>end){
+for(var i=start;i>end;i--){
 
-  throw new Error('Please delete this line and implement the function');
+  result.push(i);
+}
+return result;
+}
 }
 
 export function sum(...numbers) {
@@ -17,6 +32,11 @@ export function sum(...numbers) {
   //
   // * Please implement this function and pass all the tests in range_and_array_spec.js.
   // * Please do NOT modify the signature of the function.
+  var test = numbers.length;
+  var result=0;
+  for(var i=0;i<test;i++){
+    result+=numbers[i];
 
-  throw new Error('Please delete this line and implement the function');
+  }
+  return result;
 }
