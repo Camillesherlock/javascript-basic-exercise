@@ -26,10 +26,10 @@ get y(){
 }
 
 set x(x){
-  throw new Error(`name field of User cannot be empty`);
+  throw new Error(`NO`);
 }
 set y(y){
-  throw new Error(`name field of User cannot be empty`);
+  throw new Error(`NO`);
 }
 
 static plus(v1,v2){
